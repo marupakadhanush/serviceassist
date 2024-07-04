@@ -1,0 +1,102 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+.modal {
+    background-color: #000000;
+    padding: 20px;
+    max-width: 400px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border:2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.close-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+    align-self: flex-end;
+    text-align: center;
+    justify-content: center;
+  
+}
+
+
+.close-button:hover {
+    color: #000;
+}
+
+.modal-logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.google-button,
+.login-button,
+.signup-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+
+.google-button {
+    background-color: #dd4b39;
+    color: white;
+}
+
+.login-button {
+    background-color:#333333 ;
+    color: #28a745;
+}
+
+.signup-button {
+    background-color: #28a745;
+    color: white;
+}
