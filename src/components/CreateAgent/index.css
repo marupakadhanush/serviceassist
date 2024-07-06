@@ -1,0 +1,19 @@
+.create-agent-container {
+    display: flex;
+    flex-direction: row;
+    
+    margin: 20px;
+    
+}
+
+.create-agent-container>* {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.new-agent-heading{
+    width: 20px;
+}
+.main-create-agent-btn{
+    width: 200px;
+}

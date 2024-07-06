@@ -1,16 +1,23 @@
 import React from 'react';
-import Sidebar from './components/SideBar'; // Correct import path for Sidebar component
-import './App.css'; // CSS file for overall styling
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Sidebar from './components/SideBar';
+import ForBusiness from './components/ForBusiness';
+import './App.css';
+import CreateAgent from './components/CreateAgent';
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <div className="content">
-        <h1>Conversational Voice A.I. For Your Business</h1>
-        <p className='tag-line'>Speak the future with A.I. voice assistants.</p>
+    <Router>
+      <div className="App">
+        <Sidebar />
+        <div className="content">
+          <Switch>
+            <Route path="/create-agent" component={CreateAgent} />
+            <Route path='/forBusiness' component={ForBusiness} />
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

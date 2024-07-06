@@ -6,20 +6,21 @@ body {
 
 .App {
   display: flex;
- 
+
   /* Use flexbox to align sidebar and content */
 }
 
-.tag-line{
+.tag-line {
   color: #333333;
   font-weight: bold;
   font-size: 20px;
 }
+
 .content {
   flex: 1;
   margin-left: 280px;
- 
-  
+
+
   padding: 20px;
   color: white;
   text-align: center;

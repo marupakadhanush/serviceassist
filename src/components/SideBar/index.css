@@ -99,10 +99,13 @@ body {
 .sidebar-icon-button:hover {
     color: #b8fc84;
 }
+.linker{
+    text-decoration: none;
+}
 
 /* Additional style for the Twitter button to differentiate */
 
-.sidebar-bottom-btns{
+.sidebar-bottom-btns {
     display: flex;
     flex-direction: row;
 }
